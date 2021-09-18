@@ -1,0 +1,262 @@
+.invisivel{
+	display: none;
+}
+
+body{
+	background: no-repeat center/100% url(https://i.pinimg.com/originals/29/08/75/290875edddd4a888c05d0187ab73091e.jpg);
+	
+}
+body, ul, li, p { /*ajustes no paragrafo principal*/
+	margin: 0px; 
+	padding: 0px;
+	list-style: none;/*retirar ponto de listamento*/
+	font-size: 1.2rem;
+	font-family: Arial;
+	text-align:justify;  
+	text-justify:inter-word;/*espaço entre palabras*/
+	display: flexbox;
+	
+}
+
+.f-p{ /*fieldset do header*/
+border: none; 
+display: flexbox;
+}
+
+.header {
+	background: #556B2F ;
+	display:flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+	height:50px;
+	
+}
+
+.header-menu{
+	background: #556B2F ;
+	display:flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+	height:80px;
+}
+legend{
+	font-family: "times new roman";
+	display: flexbox;
+    padding: 16px 32px;
+	margin: 4px 2px;
+	transition: 0,5s;
+	font-style: oblique;
+	font-variant: normal;
+	
+}
+
+legend:hover{
+	color: white;
+  display: flexbox;
+}
+
+
+
+a { /*link para o index na logo*/
+	text-decoration: none; /*retirar decoração do texto dentro do botao*/
+	color: white;/*texto do botao fica branco*/
+	display: flexbox;
+    padding: 16px 32px;
+	margin: 4px 2px;
+	
+  
+}
+
+a:hover{
+	
+  color: white;
+  display: flexbox;
+}
+
+.menu{
+	display: flex;
+
+}
+
+.menu li{
+	margin-left:10px;
+	display: flex;
+}
+
+.menu a {
+	
+	padding: 10px;
+	display: flexbox;
+	}
+
+.menu .button-p{
+
+	 background-color: #DC143C		;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 80%;
+  display: flexbox;
+
+
+}
+.button-p {
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 80%;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: flexbox;
+
+}
+
+.button-p:hover {
+  background-color: green;
+  color: white;
+  display: flexbox;
+
+}
+
+h1 { /*titulo*/
+	text-align: center;
+	margin: 100px; /*espaçamento da margem*/
+	font-weight: 800;/*tamanho fonte*/
+	display: flexbox;
+}
+
+.f1{/*fieldset principal*/
+ 
+border-color: black;
+align-content: center;
+  margin-left: auto;/*manter margem esquerda centralizada*/
+  margin-right: auto;/*manter margem direita centralizada */
+  width: 70%;
+  display: flexbox;
+}
+
+p { /*paragrafo principal*/
+  font-family: "times new roman";
+  display: flexbox;
+}
+
+.f-img-p{ /*fieldset da imagem principal*/
+  align-content: center;
+  border-top-style: hidden;/*borda do top escondida*/
+  border-bottom-style: hidden;/*borda de baixo escondida*/
+  display: flexbox;
+}
+
+.img-p{/*imagem principal*/
+	
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flexbox;
+  justify-content: center;
+  justify-items: center;
+ 
+  
+}
+
+.img-ajuda{ /*imagem tela ajuda*/
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  
+
+}
+
+header a h3 img{ /*ajusta o tamanho da logo*/
+	max-width:10%;
+	display: flex;
+}
+
+
+.f-tabela-verdade{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: flexbox;
+  width: 60%;
+  height: 200px;
+  
+  border-color: black;
+  
+}
+
+.input-tabela-verdade{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30px;
+  display: flex;
+  
+  
+  
+}
+
+.button-tabela-verdade{
+	margin-left: auto;
+	margin-right: auto;
+	border-color: black;
+	height: 35px;
+	width: 30%;
+	display: flex;
+}
+
+footer{
+	background: #556B2F ;
+	display:flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: flex-end;
+	height:50px;
+	display: flexbox;
+	
+		
+}
+
+.footer-menu{
+	background: #556B2F ;
+	display:flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: flex-end;
+	height:80px;
+	display: flexbox;
+		
+}
+
+.footer-verdade{
+	background: #556B2F ;
+	display:flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: flex-end;
+	height:50px;
+	display: flexbox;
+	position: absolute;
+	top: 1200px;
+	left: 30px;
+	right: 30px;
+	
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+		
+}
+.img-down{ /*imagem footer*/
+	justify-content: space-between;
+	max-width:10%;
+	display: flex;
+	align-content: flex-end;
+
+}

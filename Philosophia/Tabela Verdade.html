@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' href='./css./style.css'>
+<meta charset="utf-8">
+	<title>
+		Philosophia
+	</title>
+</head>
+<body>
+
+
+<div>
+
+<fieldset class="f-p">
+<header class='header' >
+
+		<ul><li><a> <legend>Philosophia</legend> </a></li></ul>
+<a href='./index.html'>
+<h3><img src='./img./png.png'></h3>
+</a>
+
+
+ <ul class='menu'>
+ <li><a href='./index.html'><button class="button-p">Menu</button> </a></li>
+  <li><a href='./Ajuda.html'><button class="button-p">Ajuda</button> </a></li>
+</ul>
+
+</header>
+</fieldset>
+
+<h1>Tabela Verdade</h1>
+
+<div >
+<fieldset class="f-tabela-verdade">
+<p>Digite a quantidade de variáveis desejadas para criar a tabela (limite recomendado:4)</p>
+<input type="text" id="rowsNumber" name="" class="input-tabela-verdade">
+<button onclick="showTable()" class="button-tabela-verdade">OK</button>
+
+<script type="text/javascript">
+
+
+var body = document.body;
+
+var id_cell = 0;
+var id_row = 0;
+var _id_cell = 0;
+var tr;
+var td;
+var tbl = document.createElement('table');
+
+
+
+function insertVariables(rowsNumber) {
+
+	tr = tbl.insertRow();
+	var variable;
+
+	for(var i = 0; i < rowsNumber; i++) {
+		variable = prompt("Insira o nome da variavel");
+		td = tr.insertCell();
+		   td.appendChild(document.createTextNode(variable));
+		td.style.border = '1px solid black';  
+		td.style.textAlign = 'center';
+
+	}
+
+
+
+}
+
+function tableCreate(rowsNumber){
+
+
+	var rows = Math.pow(2, rowsNumber);
+
+	// Estilizando a tabela
+	tbl.style.width  = '100px';
+	tbl.style.border = '1px solid black';
+
+	//ids
+	var id_cell = 0;
+	var id_row = 0;
+
+	insertVariables(rowsNumber);
+
+
+	// Criando as células
+	for(var i = 0; i < rows; i++){
+		// Inserindo uma linha
+		tr = tbl.insertRow();
+		tr.setAttribute("id", "row_" + id_row++);
+
+
+		for(var j = 0; j < rowsNumber; j++){
+			// Inserindo as células da linha
+			td = tr.insertCell();
+			td.setAttribute("id", "cell_" + id_cell++);
+			td.appendChild(document.createTextNode('Cell'));
+			  
+			td.style.border = '1px solid black';  
+			td.style.textAlign = 'center';
+		}	
+	}
+
+	body.appendChild(tbl);
+
+	//Inserindo os valores na tabela
+	
+	var td;
+	var aux = rows/2;
+
+	while(rows/2 >= aux) {
+		for(var i = 0; i < rows/2; i++) {
+			td = document.getElementById("cell_" + _id_cell);
+			td.innerHTML = "V";
+
+
+			_id_cell += +rowsNumber;
+		}
+		rows = rows/2;
+	}
+}
+
+function showTable() {
+var rowsNumber = document.getElementById("rowsNumber").value;
+
+tableCreate(rowsNumber);
+}
+</script>
+</fieldset>
+</div>
+
+</div>
+
+<div>
+<fieldset class="f-p">
+	<footer class="footer-verdade">
+	
+	</a>
+	
+	 <ul class='menu'>
+	 <li><img src='./img./b1a3fab214230557053ed1c4bf17b46c-logotipo-do---cone-do-twitter-by-vexels.png' class="img-down"> </a></li>
+	  <li><img src='./img./90dd9f12fdd1eefb8c8976903944c026-logotipo-do---cone-do-facebook-by-vexels.png' class="img-down"></a></li>
+	</ul>
+
+	</footer>
+	</fieldset>
+</div>
+
+
+</body>
+</html>
